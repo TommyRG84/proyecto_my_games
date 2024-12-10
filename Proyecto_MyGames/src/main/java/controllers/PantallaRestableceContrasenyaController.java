@@ -87,7 +87,8 @@ public class PantallaRestableceContrasenyaController {
 					// Enviar el correo con la nueva contraseña
 					sendEmail(email, nuevaContrasena);
 
-					showAlert(AlertType.INFORMATION, "Éxito", "La contraseña ha sido restablecida y enviada a tu correo.");
+					showAlert(AlertType.INFORMATION, "Éxito",
+							"La contraseña ha sido restablecida y enviada a tu correo.");
 
 				} catch (SQLException e) {
 					e.printStackTrace();
@@ -123,7 +124,8 @@ public class PantallaRestableceContrasenyaController {
 		String from = "aaacande@gmail.com"; // Tu correo
 		String host = "smtp.gmail.com"; // Host del servidor SMTP (usando Gmail como ejemplo)
 		String user = "aaacande@gmail.com"; // Tu correo
-		String password = "nner rwhj pfqi hcvu"; // Contraseña de tu correo (recomendado usar una App Password si usas Gmail)
+		String password = "nner rwhj pfqi hcvu"; // Contraseña de tu correo (recomendado usar una App Password si usas
+													// Gmail)
 
 		Properties properties = System.getProperties();
 		properties.put("mail.smtp.host", host);
@@ -143,8 +145,8 @@ public class PantallaRestableceContrasenyaController {
 			message.setFrom(new InternetAddress(from));
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipientEmail));
 			message.setSubject("Restablecimiento de contraseña");
-			message.setText(
-					"Hola, \n\nTu nueva contraseña es: " + newPassword + "\n\nPor favor, inicia sesión con esta contraseña.");
+			message.setText("Hola, \n\nTu nueva contraseña es: " + newPassword
+					+ "\n\nPor favor, inicia sesión con esta contraseña.");
 
 			Transport.send(message);
 		} catch (MessagingException e) {
