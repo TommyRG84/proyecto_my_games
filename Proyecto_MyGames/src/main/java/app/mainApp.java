@@ -22,6 +22,7 @@ public class mainApp extends Application {
 
 			Scene scene = new Scene(ventana);
 			scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
+//			scene.getStylesheets().add("styles2.css");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 

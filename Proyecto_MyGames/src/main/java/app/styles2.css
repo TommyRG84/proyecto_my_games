@@ -1,54 +1,41 @@
 /* General Styles */
 .root {
     -fx-font-family: 'Press Start 2P';
-    font-family: Verdana, Geneva, Tahoma, sans-serif;   
-    -fx-background-image: url("../resources/pantallaLogin.png"); 
-    -fx-background-repeat: no-repeat; 
-    -fx-background-size: cover; 
-    -fx-background-position: center; 
-    -fx-text-fill: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 /* Estilo para los botones */
 .button {
     -fx-background-color: #9c3657; /* Color de fondo principal */
-    -fx-background-radius: 15; /* Bordes redondeados */    
+    -fx-background-radius: 20; /* Bordes redondeados */    
     -fx-border-radius: 15; /* Bordes del contorno */
     -fx-padding: 10 20 10 20; /* Espaciado interno */
     -fx-font-family: 'Press Start 2P'; /* Fuente personalizada (debes cargarla) */
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    -fx-font-size: 15px; /* Tamaño de la fuente */
+    -fx-font-size: 14px; /* Tamaño de la fuente */
     -fx-text-fill: white; /* Color del texto */
     -fx-effect: dropshadow(gaussian, #49202f, 0, 0, 0, 4); /* Sombra */
 }
 
 .button:hover {
-    -fx-background-color: #df537f;
+    -fx-background-color: #1fc469;
 }
 
 /* Estilo para los campos de texto */
 .text-field, .password-field {
-    -fx-background-color: #adc193;
-    -fx-border-color: #89947c;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c0c0c0;
     -fx-border-width: 1px;
     -fx-border-radius: 3px;
     -fx-padding: 5px;
 }
 
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #4CAF50;
+}
 
 /* Estilo para las alertas */
 .dialog-pane {
     -fx-font-size: 14px;
-}
-
-/* Estilo para el texto "Username" */
-#usernameLabel {
-    -fx-font-size: 20px;
-    -fx-text-fill: #5b644e;
-}
-
-/* Estilo para el texto "Password" */
-#passwordLabel {
-    -fx-font-size: 20px;
-    -fx-text-fill: #5b644e;
 }

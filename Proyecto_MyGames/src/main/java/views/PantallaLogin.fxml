@@ -9,54 +9,51 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@../../../../target/resources/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PantallaLoginController">
-   <top>
-      <Label text="     " BorderPane.alignment="CENTER" />
-   </top>
-   <left>
-      <Label text="     " BorderPane.alignment="CENTER" />
-   </left>
-   <bottom>
-      <Label text="     " BorderPane.alignment="CENTER" />
-   </bottom>
-   <right>
-      <Label text="     " BorderPane.alignment="CENTER" />
-   </right>
-   <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0">
-         <children>
-            <Label layoutX="292.0" layoutY="244.0" text="Username:">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-            <Label layoutX="292.0" layoutY="289.0" text="Password:">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-            <TextField fx:id="txtUsuario" layoutX="442.0" layoutY="249.0" prefHeight="25.0" prefWidth="300.0" />
-            <PasswordField fx:id="pwPassword" layoutX="442.0" layoutY="294.0" prefHeight="25.0" prefWidth="300.0" />
-            <VBox layoutX="348.0" layoutY="386.0" spacing="15.0">
-               <children>
-                  <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#btnLoginPressed" prefHeight="40.0" prefWidth="350.0" text="Login">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnCreaCuenta" mnemonicParsing="false" onAction="#btnCreaCuentaPressed" prefHeight="40.0" prefWidth="350.0" text="Crear cuenta">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btnRestablecePass" mnemonicParsing="false" onAction="#btnRestablecePassPressed" prefHeight="40.0" prefWidth="350.0" text="Restablecer contraseña">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-               </children>
-            </VBox>
-         </children>
-      </AnchorPane>
-   </center>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@../../resources/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PantallaLoginController">
+	<top>
+		<Label text="     " BorderPane.alignment="CENTER" />
+	</top>
+	<left>
+		<Label text="     " BorderPane.alignment="CENTER" />
+	</left>
+	<bottom>
+		<Label text="     " BorderPane.alignment="CENTER" />
+	</bottom>
+	<right>
+		<Label text="     " BorderPane.alignment="CENTER" />
+	</right>
+	<center>
+		<AnchorPane prefHeight="200.0" prefWidth="200.0">
+			<children>
+				<Label id="usernameLabel" layoutX="242.0" layoutY="203.0" text="Username:">
+					<font>
+						<Font size="24.0" />
+					</font>
+				</Label>
+				<Label id="passwordLabel" layoutX="242.0" layoutY="248.0" text="Password:">
+					<font>
+						<Font size="24.0" />
+					</font>
+				</Label>
+				<TextField fx:id="txtUsuario" layoutX="448.0" layoutY="200.0" prefHeight="25.0" prefWidth="300.0" />
+				<PasswordField fx:id="pwPassword" layoutX="448.0" layoutY="245.0" prefHeight="25.0" prefWidth="300.0" />
+				<VBox layoutX="322.0" layoutY="452.0" spacing="15.0" />
+						<Button fx:id="btnLogin" layoutX="242.0" layoutY="414.0" mnemonicParsing="false" onAction="#btnLoginPressed" prefHeight="66.0" prefWidth="459.0" text="Login">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</Button>
+						<Button fx:id="btnCreaCuenta" layoutX="242.0" layoutY="508.0" mnemonicParsing="false" onAction="#btnCreaCuentaPressed" prefHeight="66.0" prefWidth="459.0" text="Crear cuenta">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</Button>
+						<Button fx:id="btnRestablecePass" layoutX="242.0" layoutY="603.0" mnemonicParsing="false" onAction="#btnRestablecePassPressed" prefHeight="66.0" prefWidth="459.0" text="Restablecer contraseña">
+							<font>
+								<Font size="18.0" />
+							</font>
+						</Button>
+			</children>
+		</AnchorPane>
+	</center>
 </BorderPane>
