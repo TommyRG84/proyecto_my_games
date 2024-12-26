@@ -8,6 +8,10 @@
     -fx-text-fill: white;
 }
 
+.create-account {
+    -fx-background-image: url("../resources/pantallaCreateAccount.png"); 
+}
+
 .button {
     -fx-background-color: #9c3657;
     -fx-background-radius: 15;  
@@ -24,7 +28,7 @@
     -fx-background-color: #df537f;
 }
 
-.text-field, .password-field {
+.text-field, .password-field, .comboBox {
     -fx-background-color: #adc193;
     -fx-border-color: #89947c;
     -fx-border-width: 1px;
@@ -38,5 +42,10 @@
 
 .label-text {
     -fx-font-size: 20px;
+    -fx-text-fill: #5b644e;
+}
+
+.label-text-create-account {
+    -fx-font-size: 15px;
     -fx-text-fill: #5b644e;
 }
