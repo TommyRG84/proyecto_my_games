@@ -8,10 +8,6 @@
     -fx-text-fill: white;
 }
 
-.create-account {
-    -fx-background-image: url("../resources/pantallaCreateAccount.png"); 
-}
-
 .button {
     -fx-background-color: #9c3657;
     -fx-background-radius: 15;  
@@ -45,7 +41,12 @@
     -fx-text-fill: #5b644e;
 }
 
+/* Estilos únicos para la pantalla de crear cuenta */
 .label-text-create-account {
     -fx-font-size: 15px;
     -fx-text-fill: #5b644e;
+}
+
+.create-account {
+    -fx-background-image: url("../resources/pantallaCreateAccount.png"); 
 }
