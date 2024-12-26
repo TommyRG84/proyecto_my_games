@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PantallaRestableceContrasenyaController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@../../resources/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PantallaRestableceContrasenyaController">
    <top>
       <Label text="     " BorderPane.alignment="CENTER" />
    </top>
@@ -24,20 +24,20 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <Label layoutX="292.0" layoutY="244.0" text="Email:">
+            <Label layoutX="242.0" layoutY="219.0" styleClass="label-text" stylesheets="@../../resources/styles.css" text="Email:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <TextField fx:id="txtEmail" layoutX="392.0" layoutY="249.0" prefHeight="25.0" prefWidth="350.0" />
-            <VBox layoutX="348.0" layoutY="386.0" spacing="45.0">
+            <TextField fx:id="txtEmail" layoutX="397.0" layoutY="216.0" prefHeight="25.0" prefWidth="350.0" />
+            <VBox layoutX="270.0" layoutY="441.0" spacing="45.0">
                <children>
-                  <Button fx:id="btnResetPass" mnemonicParsing="false" onAction="#btnResetPassPressed" prefHeight="40.0" prefWidth="350.0" text="Reset Password">
+                  <Button fx:id="btnResetPass" mnemonicParsing="false" onAction="#btnResetPassPressed" prefHeight="61.0" prefWidth="460.0" text="Reset Password">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#btnCancelarPressed" prefHeight="40.0" prefWidth="350.0" text="Cancelar">
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#btnCancelarPressed" prefHeight="61.0" prefWidth="460.0" text="Cancelar">
                      <font>
                         <Font size="18.0" />
                      </font>

@@ -1,11 +1,16 @@
 .root {
     -fx-font-family: 'Press Start 2P';
     font-family: Verdana, Geneva, Tahoma, sans-serif;   
-    -fx-background-image: url("../resources/pantallaLogin.png"); 
+    -fx-background-image: url("../resources/pantallaCreateAccount.png"); 
     -fx-background-repeat: no-repeat; 
     -fx-background-size: cover; 
     -fx-background-position: center; 
     -fx-text-fill: white;
+}
+
+.label-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #5b644e;
 }
 
 .button {
@@ -24,7 +29,7 @@
     -fx-background-color: #df537f;
 }
 
-.text-field, .password-field {
+.text-field, .password-field, .comboBox {
     -fx-background-color: #adc193;
     -fx-border-color: #89947c;
     -fx-border-width: 1px;
@@ -32,11 +37,5 @@
     -fx-padding: 5px;
 }
 
-.dialog-pane {
-    -fx-font-size: 14px;
-}
 
-.label-text {
-    -fx-font-size: 20px;
-    -fx-text-fill: #5b644e;
-}
+

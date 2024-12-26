@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PantallaRegistroController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@../../resources/stylesCreateAccount.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PantallaRegistroController">
    <top>
       <Label text="     " BorderPane.alignment="CENTER" />
    </top>
@@ -28,59 +28,59 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <Label layoutX="208.0" layoutY="136.0" text="Avatar:">
+            <Label layoutX="210.0" layoutY="195.0" styleClass="label-text" stylesheets="@../../resources/stylesCreateAccount.css" text="Avatar:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="208.0" layoutY="234.0" text="Nombre:">
+            <Label layoutX="210.0" layoutY="288.0" styleClass="label-text" stylesheets="@../../resources/stylesCreateAccount.css" text="Nombre:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="208.0" layoutY="274.0" text="Username:">
+            <Label layoutX="210.0" layoutY="328.0" styleClass="label-text" stylesheets="@../../resources/stylesCreateAccount.css" text="Username:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="208.0" layoutY="314.0" text="Email:">
+            <Label layoutX="210.0" layoutY="368.0" styleClass="label-text" stylesheets="@../../resources/stylesCreateAccount.css" text="Email:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="208.0" layoutY="354.0" text="Fecha de nacimiento:">
+            <Label layoutX="210.0" layoutY="408.0" styleClass="label-text" stylesheets="@../../resources/stylesCreateAccount.css" text="Fecha de nacimiento:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="208.0" layoutY="394.0" text="Género favorito:">
+            <Label layoutX="210.0" layoutY="448.0" styleClass="label-text" stylesheets="@../../resources/stylesCreateAccount.css" text="Género favorito:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="208.0" layoutY="434.0" text="Contraseña:">
+            <Label layoutX="210.0" layoutY="490.0" styleClass="label-text" stylesheets="@../../resources/stylesCreateAccount.css" text="Contraseña:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="208.0" layoutY="474.0" text="Confirma contraseña:">
+            <Label layoutX="210.0" layoutY="529.0" styleClass="label-text" stylesheets="@../../resources/stylesCreateAccount.css" text="Confirma contraseña:">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <TextField fx:id="txtNombre" layoutX="341.0" layoutY="239.0" prefHeight="25.0" prefWidth="300.0" />
-            <TextField fx:id="txtUsername" layoutX="341.0" layoutY="279.0" prefHeight="25.0" prefWidth="300.0" />
-            <TextField fx:id="txtEmail" layoutX="341.0" layoutY="319.0" prefHeight="25.0" prefWidth="300.0" />
-            <DatePicker fx:id="dtFechaNac" layoutX="451.0" layoutY="359.0" prefHeight="25.0" prefWidth="300.0" />
-            <ComboBox fx:id="cbGeneroFav" layoutX="451.0" layoutY="399.0" prefHeight="25.0" prefWidth="300.0" />
-            <PasswordField fx:id="pwPassword" layoutX="451.0" layoutY="439.0" prefHeight="25.0" prefWidth="300.0" />
-            <PasswordField fx:id="pwPassword2" layoutX="451.0" layoutY="479.0" prefHeight="25.0" prefWidth="300.0" />
-            <Button fx:id="btnCreaCuenta" layoutX="166.0" layoutY="632.0" mnemonicParsing="false" onAction="#btnCreaCuentaPressed" prefHeight="40.0" prefWidth="350.0" text="Crear cuenta">
+            <TextField fx:id="txtNombre" layoutX="508.0" layoutY="282.0" prefHeight="25.0" prefWidth="277.0" />
+            <TextField fx:id="txtUsername" layoutX="508.0" layoutY="322.0" prefHeight="25.0" prefWidth="277.0" />
+            <TextField fx:id="txtEmail" layoutX="508.0" layoutY="362.0" prefHeight="25.0" prefWidth="277.0" />
+            <DatePicker fx:id="dtFechaNac" layoutX="508.0" layoutY="402.0" prefHeight="25.0" prefWidth="277.0" />
+            <ComboBox fx:id="cbGeneroFav" layoutX="507.0" layoutY="438.0" prefHeight="0.0" prefWidth="278.0" styleClass="comboBox" stylesheets="@../../resources/stylesCreateAccount.css" />
+            <PasswordField fx:id="pwPassword" layoutX="508.0" layoutY="483.0" prefHeight="29.0" prefWidth="277.0" />
+            <PasswordField fx:id="pwPassword2" layoutX="508.0" layoutY="522.0" prefHeight="30.0" prefWidth="277.0" />
+            <Button fx:id="btnCreaCuenta" layoutX="121.0" layoutY="621.0" mnemonicParsing="false" onAction="#btnCreaCuentaPressed" prefHeight="40.0" prefWidth="350.0" text="Crear cuenta">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button fx:id="btnCancelar" layoutX="531.0" layoutY="632.0" mnemonicParsing="false" onAction="#btnCancelarPressed" prefHeight="40.0" prefWidth="350.0" text="Cancelar">
+            <Button fx:id="btnCancelar" layoutX="481.0" layoutY="621.0" mnemonicParsing="false" onAction="#btnCancelarPressed" prefHeight="40.0" prefWidth="341.0" text="Cancelar">
                <font>
                   <Font size="18.0" />
                </font>

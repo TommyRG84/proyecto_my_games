@@ -25,12 +25,12 @@
 	<center>
 		<AnchorPane prefHeight="200.0" prefWidth="200.0">
 			<children>
-				<Label id="usernameLabel" layoutX="242.0" layoutY="203.0" text="Username:">
+				<Label layoutX="242.0" layoutY="203.0" styleClass="label-text" stylesheets="@../../resources/styles.css" text="Username:">
 					<font>
 						<Font size="24.0" />
 					</font>
 				</Label>
-				<Label id="passwordLabel" layoutX="242.0" layoutY="248.0" text="Password:">
+				<Label layoutX="242.0" layoutY="248.0" styleClass="label-text" stylesheets="@../../resources/styles.css" text="Password:">
 					<font>
 						<Font size="24.0" />
 					</font>
